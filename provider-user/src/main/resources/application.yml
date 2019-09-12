@@ -1,0 +1,18 @@
+server:
+  port: 7170
+
+spring:
+  application.name: provider-user
+  profiles.active: dev
+
+---
+spring:
+  profiles:
+    include: dev
+
+
+
+
+
+
+

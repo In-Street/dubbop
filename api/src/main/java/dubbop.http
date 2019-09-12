@@ -1,0 +1,26 @@
+###
+GET {{url}}/user/getUserGeneric
+Cache-Control: no-cache
+
+
+###
+GET {{url}}/user/getUserAsyncConsumer
+Cache-Control: no-cache
+
+###
+GET {{url}}/user/getUserSyncConsumer
+Cache-Control: no-cache
+
+###
+GET {{url}}/city/getCityNameAsyncConsumer?name = new york
+Cache-Control: no-cache
+
+###
+GET {{url}}/city/asyncProvider
+Cache-Control: no-cache
+
+###
+GET {{url}}/city/magic/555
+Cache-Control: no-cache
+
+###

@@ -1,0 +1,17 @@
+server:
+  port: 7171
+
+spring:
+  application.name: provider-cityz
+  profiles.active: dev
+
+---
+spring:
+  profiles: dev
+
+
+
+
+
+
+

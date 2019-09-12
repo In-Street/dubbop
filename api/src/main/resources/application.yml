@@ -1,0 +1,14 @@
+server:
+  port: 7270
+
+spring:
+  application.name: api
+  profiles.active: dev
+
+---
+spring:
+  profiles: dev
+
+
+
+
