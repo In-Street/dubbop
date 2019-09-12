@@ -3,7 +3,7 @@ package cyf.dubbo.api.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSONObject;
-//import com.magic.interfaces.service.MagicCityService;
+import com.magic.interfaces.service.MagicCityService;
 import cyf.dubbo.common.interfaces.city.CityService;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+
 
 /**
  * @author Cheng Yufei
@@ -32,8 +33,8 @@ public class CityController {
 //    @Reference(version = "1.0.0", group = "CityModule", interfaceClass = CityService.class)
     private CityService cityService;
 
-    /*@Reference(version = "1.0.0", group = "MagicCityService", interfaceClass = MagicCityService.class,url = "192.168.99.113:20882")
-    private MagicCityService magicCityService;*/
+    @Reference(version = "1.0.0", group = "MagicCityService", interfaceClass = MagicCityService.class/*,url = "192.168.99.113:20882"*/)
+    private MagicCityService magicCityService;
 
     public CityController() {
     }
@@ -71,8 +72,8 @@ public class CityController {
         return "";
     }
 
-    /*@GetMapping("/magic/{id}")
+    @GetMapping("/magic/{id}")
     public JSONObject magicCity(@PathVariable Integer id) {
         return magicCityService.cityHandle(id);
-    }*/
+    }
 }

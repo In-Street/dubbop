@@ -1,0 +1,5 @@
+# Project exclude paths
+/api/target/
+/common-service/target/
+/provider-city/target/
+/provider-user/target/
